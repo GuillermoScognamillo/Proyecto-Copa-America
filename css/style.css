@@ -470,6 +470,9 @@ footer .contenedor-footer nav{
         width: 480px;
     }
 
+    footer{
+        max-width: 480px;
+    }
 
     .contenedor-footer{
         width: 480px;
@@ -504,6 +507,10 @@ footer .contenedor-footer nav{
 
     .contendor-main{
         width: 768px;
+    }
+
+    footer{
+        max-width: 768px;
     }
 
     .contenedor-footer{
