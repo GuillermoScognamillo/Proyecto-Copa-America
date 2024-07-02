@@ -51,6 +51,7 @@ input{
     --max-height: 700px;
     --space-small: 10px;
     --space-medium: 20px;
+    --space-large: 40px;
 }
 
 /* Animaciones */
@@ -364,19 +365,15 @@ header .contenedor-header{
 /* Main */
 main{
     display: flex;
-    justify-content: center;
-}
-
-/* Contenedor amplio */
-main .contenedor-main{
-    display: flex;
     flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--space-medium);
     
-    width: var(--max-width);
-    background-color: var(--color-secundario);
 }
 
-.contenedor-main .titulo-animado{
+
+main .titulo-animado{
     display: flex;
     justify-content: center;
 
@@ -385,27 +382,26 @@ main .contenedor-main{
 }
 
 /* Alineado del titulo */
-.contenedor-main .grupo h1{
+main .grupo h1{
     text-align: center;
 }
 
 
-.contendor-main .grupo{
+main .grupo{
     display: flex;
-    flex-flow: column;   
+    flex-flow: column; 
     margin: var(--space-medium);
     padding: var(--space-medium);
 
 } 
 
 
-.contenedor-main .grupo nav{
+main .grupo nav{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
 
     padding: var(--space-medium);
-    gap: var(--space-medium);    
+    gap: var(--space-large);    
 
 }
 
@@ -414,33 +410,24 @@ footer{
     display: flex;
     flex-flow: column;
     align-items: center;
+    
     background-color: var(--color-primario);
     margin-top: var(--space-medium);
-    
 }
 
-footer .contenedor-footer{
-    
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: var(--max-width);
-    background-color: var(--color-primario);
-    padding: var(--space-medium);
-}
 
-footer .contenedor-footer img{
+footer img{
     height: 150px;
     width: 150px;
+    margin: var(--space-medium);
 }
 
-footer .contenedor-footer nav{
-    display: flex;
+footer nav{
     gap: var(--space-medium);
     margin: var(--space-medium);
 }
 
-.contenedor-footer .vibra{
+footer .vibra{
     height: 70px;
     width: 300px;
     margin: var(--space-medium);
@@ -466,17 +453,6 @@ footer .contenedor-footer nav{
         align-items: center;
     }
 
-    .contendor-main{
-        width: 480px;
-    }
-
-    footer{
-        max-width: 480px;
-    }
-
-    .contenedor-footer{
-        width: 480px;
-    }
 
     .messi img{
         height: 300px;
@@ -503,18 +479,6 @@ footer .contenedor-footer nav{
         flex-flow: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .contendor-main{
-        width: 768px;
-    }
-
-    footer{
-        max-width: 768px;
-    }
-
-    .contenedor-footer{
-        width: 768px;
     }
 
     .messi img{
