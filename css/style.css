@@ -322,30 +322,24 @@ body{
 /* Header */
 header{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primario);
-}
-
-/* Contenedor acotado */
-header .contenedor-header{
-    width: var(--max-width);
-    background-color: var(--color-primario);
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto 0;
+    background-color: var(--color-primario);
 }
 
-.contenedor-header .logo{
+
+
+header .logo{
     padding-left: var(--space-medium);
 }
 
-.contenedor-header .logo img{
+header .logo img{
     height: 150px;
     width: 150px;
 }
 /* Parte derecha encabezado */
-.contenedor-header nav{
+header nav{
     display: flex;
     flex-flow: column;
     align-items: flex-start;
