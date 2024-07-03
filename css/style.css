@@ -322,9 +322,9 @@ body{
 /* Header */
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin: auto 0;
+    margin: 0 auto;
     background-color: var(--color-primario);
 }
 
@@ -429,10 +429,16 @@ footer .vibra{
 
 @media (min-width:1px) and (max-width:480px) {
     
-    body{
-        max-width: 480px;
+    header .logo{
+        padding: 0px;
     }
-    
+
+    header .logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+
     input{
         width: 130px;
         height: 30px;
@@ -440,25 +446,22 @@ footer .vibra{
     }
 
 
-    .contenedor-header{
-        width: 480px ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
     .messi img{
-        height: 300px;
-        width: 450px;
+        height: 200px;
+        width: 350px;
     }
 
 }
 
 @media (min-width:481px) and (max-width:768px) {
     
-    body{
-        max-width: 768px;
+    header .logo{
+        padding: 0px;
+    }
+
+    header .logo img{
+        width: 80px;
+        height: 80px;
     }
 
     input{
@@ -467,17 +470,14 @@ footer .vibra{
         gap: 20px;
     }
 
-    .contenedor-header{
-        width: 768px ;
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
+    .card .card-img{
+        height: 260px;
+        width: 260px;
     }
 
     .messi img{
-        height: 300px;
-        width: 450px;
+        height: 450px;
+        width: 675px;
     }
     
 }
