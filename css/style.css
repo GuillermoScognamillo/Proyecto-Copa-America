@@ -325,7 +325,7 @@ header{
     justify-content: center;
     align-items: center;
     
-    background-color: var(--color-contraste);
+    background-color: var(--color-primario);
 }
 
 header .logo{
