@@ -421,6 +421,10 @@ footer nav{
     margin: var(--space-medium);
 }
 
+footer nav a{
+    margin: var(--space-small);
+}
+
 footer .vibra{
     height: 70px;
     width: 300px;
